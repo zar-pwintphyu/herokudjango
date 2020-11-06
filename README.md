@@ -1,2 +1,2 @@
 # herokudjango
-python 
+python-django
