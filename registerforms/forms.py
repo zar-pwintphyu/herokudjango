@@ -33,7 +33,7 @@ class SignUpForm(forms.Form,forms.ModelForm):
    
     class Meta:
         model = User
-        fields = ('first_name', 'last_name', 'username', 'email',)
+        fields = ('first_name', 'last_name', 'username', 'email','zip_code','city','place','apartment')
         
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -69,11 +69,7 @@ class SignUpForm(forms.Form,forms.ModelForm):
 
             
         )
-        class Meta:
-            model = User
-            fields = ('first_name', 'last_name', 'username', 'email','zip_code','city','place','apartment')
-    
-       
+        
         
         
 
